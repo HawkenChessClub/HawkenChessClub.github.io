@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/carousel.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <base href="https://hawkencoding.github.io/">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+    function toggleText() {
+      var text = document.getElementById("demo");
+      if (text.style.display === "none") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+  </script>
+  <title>Hawken Coding Club</title>
+</head>
+
+<body>
+  <!--Navbar-->
+  <script>
+    $(document).ready(function() {
+        $("#top-menu").load("html/menu.html");
+    });
+  </script>
+  <div id=top-menu>
+  </div>
+
+  <div id="problemoftheday" class="container-fluid">
+    <h1 style="color:rgb(255, 74, 86);">Problems of the Week</h1>
+    <p></p>
+    <p></p>
+    <h5 style="color:rgb(163, 255, 185);">Rules:</h5>
+    <p>1. All problems are due on Friday at 9:00AM.</p>
+    <p>2. You can use any language to code the problems. To submit, copy your code and submit it using the google form.</p>
+    <p>3. Collaboration is somewhat allowed. You can share ideas, but not specific lines of code.</p>
+    <p>4. Partial credit is awarded, so submit any thing you can solve.</p>
+    <p>5. Keep in mind that there is an extra point awarded for most efficient code.</p>
+    <p></p>
+    <p></p>
+    <h2 class="text-left" style="color:rgb(255, 74, 86);">Problems due 12/4:</h2>
+    <h5 style="color:rgb(163, 255, 185);">Problem #1:</h5>
+    <p>Create a method named shuffleWord that takes a string as input and returns a scrambled version of the word. You may not use any premade methods to complete this task, you must create your own algorithm.</p>
+    <p></p>
+    <h5 style="color:rgb(75, 239, 242);">Problem #2:</h5>
+    <p>Create a method named wordsInASentence that takes a string as input and prints out every word in the sentence on its own line. You may find words by looking in-between spaces.</p>
+    <h5 style="color:rgb(255, 74, 86);">Problem #3:</h5>
+    <p>Create a method named isPalindrome that takes a string as input and returns either true or false depending on if it is a palindrome or not. Hint: Palindromes are words that are spelled the same forwards and backward.</p>
+    <a href="https://docs.google.com/forms/d/1hBcDPiV5pSn6pmiqVQG0dL-hObadoYbjKSof13vlbtU" target="_blank">Submit Here</a><p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <h2 class="text-left" style="color:rgb(255, 74, 86);">Problems due 11/20:</h2>
+    <h5 style="color:rgb(163, 255, 185);">Problem #1:</h5>
+    <p>For this problem, create a segment of code that takes a user input and stores it as a variable <b>r</b>, the radius of the circle and prints out the diameter and circumference of the circle.</p>
+    <p></p>
+    <h5 style="color:rgb(75, 239, 242);">Problem #2:</h5>
+    <p>For this problem, ask the user for two inputs. One should be the number of sides for a regular polygon, and one should be the side length. Then print out the area of the polygon using this formula, Area = <sup>(s<sup>2</sup>n)</sup>&frasl;<sub>(4*tan(<sup>180</sup>&frasl;<sub>n</sub>))</sub> , in which s = side length, and n = number of sides.</p>
+    <h5 style="color:rgb(255, 74, 86);">Problem #3:</h5>
+    <p>For this challenge, you should try to create a calculator which can convert from Ballpoint Pens to Rollerball Pens. The conversion ratio is x Ballpoint pens = log<sub>20</sub>(12x<sup>e</sup>) Rollerball pens. Have a user input a number of ballpoint pens and get rollerball pens, or input a number of rollerball pens and get ballpoint pens. <b>This conversion should be exact (not a decimal approx.)</b></p>
+    <!--<a class="button4" style="background-color:#4ef18f" onclick="toggleText()">Button 4</a>-->
+    <!--<button type='button' onclick="toggleText()">Show Solutions</button>-->
+    <!--<button type ='button' onclick="toggleText()" style="background-color:#4ef18f" class="button4">Show Answers</button>-->
+    <a onclick="toggleText()" class="push_button red">Show Solutions</a>
+    <div id='demo' style='display: none'>
+      <p></p>
+      <h5>Java:</h5>
+      <p>Problem #1</p>
+      <pre>
+        <code>import java.util.Scanner;
+  class problem1{
+    public static void main(String[] args){
+      Scanner scan = new Scanner(System.in);
+      System.out.println("Enter an integer");
+      int r = scan.nextInt();
+      System.out.println("Diameter: " + 2*r + "\nCircumference: " + 3.14*2*r);
+    }
+  }
+        </code>
+      </pre>
+      <p>Problem #2</p>
+      <pre>
+        <code>import java.util.Scanner;
+import java.lang.Math;
+class problem2{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the number of sides");
+        int n = scan.nextInt();
+        System.out.println("Enter a side length");
+        int s = scan.nextInt();
+        System.out.println("Area: " + Math.round(((Math.pow(s,2)*n)/(4*Math.tan(Math.toRadians(180/n))))*100.0)/100.0);
+    }
+}
+        </code>
+      </pre>
+      <p>Problem #3</p>
+      <pre>
+        <code>import java.util.Scanner;
+import java.lang.Math;
+class problem3{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the number of ballpoint pens");
+        int n = scan.nextInt();
+        System.out.println("Number of rollerball pens: " + Math.round((Math.log(12*Math.pow(n,Math.E))/Math.log(20))*100.0)/100.0);
+    }
+}
+        </code>
+      </pre>
+      <p></p>
+      <h5>Python:</h5>
+      <p>Problem #1</p>
+      <pre>
+        <code>r = int(input("Enter a radius to convert to the diameter and circumference"))
+print("Diameter:" + str(2*r) + "\nCircumference:" + str(3.14*2*r))
+        </code>
+      </pre>
+      <p>Problem #2</p>
+      <pre>
+        <code>import math
+n = int(input("How many sides does you regular polygon have?"))
+s = int(input("What is the length of each side?"))
+print(str(((s**2)*n)/round(4*math.tan(math.radians(180/n)),2)))
+        </code>
+      </pre>
+      <p>Problem #3</p>
+      <pre>
+        <code>import math
+n = int(input("Enter the number of ball point pens"))
+print("Number of rollerball pens: " + str(round(math.log(12*n**math.e)/math.log(20),2)))
+        </code>
+      </pre>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+  <script src="../js/dataArray.js" charset="utf-8"></script>
+  <script src="../js/date.js" charset="utf-8"></script>
+</body>
+
+</html>
