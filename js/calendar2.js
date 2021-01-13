@@ -323,8 +323,9 @@
   var data = [
     { eventName: 'Chess Club Meeting @ 2:30-3:30', calendar: 'Meetings', color: 'orange', date: '2021-01-12' },
 
-    { eventName: 'GCSCL #3 @ 12pm', calendar: 'Tournaments', color: 'blue', date: '2021-01-16' }
-
+    { eventName: 'GCSCL #3 @ 12pm', calendar: 'Tournaments', color: 'blue', date: '2021-01-16' },
+    { eventName: 'Presidential Pawn Storm @ 12pm', calendar: 'Tournaments', color: 'blue', date: '2021-02-15' },
+    { eventName: 'GCSCL #4 @ 12pm', calendar: 'Tournaments', color: 'blue', date: '2021-02-20'}
   ];
 
   var calendar = new Calendar('#calendar', data);
