@@ -325,7 +325,10 @@
 
     { eventName: 'GCSCL #3 @ 12pm', calendar: 'Tournaments', color: 'blue', date: '2021-01-16' },
     { eventName: 'Presidential Pawn Storm @ 12pm', calendar: 'Tournaments', color: 'blue', date: '2021-02-15' },
-    { eventName: 'GCSCL #4 @ 12pm', calendar: 'Tournaments', color: 'blue', date: '2021-02-20'}
+    { eventName: 'GCSCL #4 @ 12pm', calendar: 'Tournaments', color: 'blue', date: '2021-02-20'},
+    { eventName: 'The February Major Scholastic Tournament @ 1:45pm', calendar: 'Tournaments', color: 'blue', date: '2021-02-06'},
+    { eventName: 'Charlotte Online k-12 Championship Series @ 12:30pm', calendar: 'Tournaments', color: 'blue', date: '2021-02-27'},
+    { eventName: 'The Royal Battle @ 12pm', calendar: 'Tournaments', color: 'blue', date: '2021-02-27'}
   ];
 
   var calendar = new Calendar('#calendar', data);
